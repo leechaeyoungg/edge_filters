@@ -30,6 +30,6 @@ plt.subplot(2, 3, 6); plt.title("Overlay"); plt.imshow(cv2.addWeighted(eq_bgr, 0
 plt.tight_layout(); plt.show()
 
 # ─── 6. 저장 (선택: 세그멘테이션 라벨용 마스크) ─────
-output_mask_path = image_path.replace("images", "masks").replace(r"C:\Users\dromii\Downloads\crack.jpg", r"C:\Users\dromii\Downloads\mask.png")
+output_mask_path = image_path.replace("images", "masks").replace(".jpg", "_eqmask.png")
 os.makedirs(os.path.dirname(output_mask_path), exist_ok=True)
 cv2.imwrite(output_mask_path, mask1_closed)

@@ -6,6 +6,6 @@ eq = cv2.equalizeHist(img)
 eq_bgr = cv2.cvtColor(eq, cv2.COLOR_GRAY2BGR)
 
 plt.figure(figsize=(12,6))
-plt.subplot(1,2,1); plt.title("Equalized1"); plt.imshow(img, cmap='gray')
-plt.subplot(1,2,2); plt.title("Equalized2"); plt.imshow(eq_bgr)
+plt.subplot(1,2,1); plt.title("original"); plt.imshow(img, cmap='gray')
+plt.subplot(1,2,2); plt.title("Equalized"); plt.imshow(eq_bgr)
 plt.axis('off'); plt.tight_layout(); plt.show()
